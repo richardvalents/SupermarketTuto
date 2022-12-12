@@ -1,24 +1,12 @@
-Step 1: Double Click on SupermarketTuto.sln
-Step2 : In the shared folder, copy the database file called "smarketdb.mdf" and paste it in your documents
-Step 3: Once The Solution is open in visual studio, click on server explorer
-Step 4: Then Click on "Connect to Database"
-Step 5: Browse to the location of the database file(which you copied into "your documents")
-Step6: Once the database is successfully added, Right-click on it and click on property
-Step7 : Copy the connection string and replace it in all the sqlconnection objects.
+Step 1: Double click pada solution SupermarketTuto.sln
+Step2 : Di dalam file ini, copy and paste file smarketdb.mdf ke dalam solution
+Step 3: Ketika visual studio telah dibuka, click/cari server explorer
+Step 4: Lalu klik "Connect to Database"
+Step 5: Cari location dari database file tersebut (harusnya disebelah kiri)
+Step 6: Setelah berhasil ditambahkan, right click di file database dan klik 'property'
+Step 7 : Copy connection string dan gantikan semua sqlconnection dengan address baru dibawah (sesuai laptop anda).
 
 SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\afwadmin\Documents\smarketdb.mdf;Integrated Security=True;Connect Timeout=30");
-Replace the string inside the double cote with the connection string.
+Gantikan apa yang ada di dalam "" dengan connection address baru.
 
-Step8 : Run the project and enjoy this wonderfull application
-
-Note:
-1. In case you fill difficult to follow all these steps,you can simply open the solution, 
-and then create your own database by following instructions in my youtube video tutorial, 
-once you create the database, you can the run the project successfully
-
-2. Making project like this takes a lot of time, you support to this channel will be highly appreciated.
-
-Share our content, Subscribe, drop a nice content, donate if you can. it will help us to keep on publishing more and more content
-
-
-Code Space
+Step8 : Project dapat di-run dengan baik
